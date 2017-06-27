@@ -1,14 +1,18 @@
-def fizzbuzzer(min,max)
-  (min..max).each do |number|
-  elsif number % 105 == 0 then puts "SuperFizzBuzz"
-  elsif number % 21 == 0 then puts "SuperFizz"
-  elsif number % 35 == 0 then puts "SuperBuzz"
-  elsif number % 15 == 0 then puts "FizzBuzz"
-  elsif number % 3 == 0 then puts "Fizz"
-  elsif number % 5 == 0 then puts "Buzz"
-  elsif number % 7 == 0 then puts "Super"
-  else puts number end
+class Fizzbuzz
+  def initialize(number)
+  @number = number
+  def number
+    @number = number
+  end
+def fizzbuzzer()
+  if @number % 105 == 0 then return "SuperFizzBuzz"
+  elsif @number % 21 == 0 then return "SuperFizz"
+  elsif @number % 35 == 0 then return "SuperBuzz"
+  elsif @number % 15 == 0 then return "FizzBuzz"
+  elsif @number % 3 == 0 then return "Fizz"
+  elsif @number % 5 == 0 then return "Buzz"
+  elsif @number % 7 == 0 then return "Super"
+  else puts @number end
   end
 end
-
-fizzbuzzer(0,1000)
+end
